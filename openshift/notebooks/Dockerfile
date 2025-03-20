@@ -1,5 +1,7 @@
 FROM registry.access.redhat.com/ubi9/python-312:latest
 
+USER root
+
 RUN yum install -y make gcc gcc-c++ && \
     yum clean all
 
